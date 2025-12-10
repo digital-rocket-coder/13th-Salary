@@ -3,9 +3,7 @@ import Background from './components/Background';
 import CyberContainer from './components/CyberContainer';
 import TimerDisplay from './components/TimerDisplay';
 import Celebration from './components/Celebration';
-import MoneyRain from './components/MoneyRain';
 import NotificationManager from './components/NotificationManager';
-import DailyBriefing from './components/DailyBriefing';
 import { TimeLeft, AppState } from './types';
 import { Rocket, Satellite, Telescope, Info } from 'lucide-react';
 
@@ -97,11 +95,7 @@ const App: React.FC = () => {
   return (
     <div className="relative min-h-screen flex flex-col items-center justify-center p-4">
       <Background />
-      <MoneyRain />
       
-      {/* Daily Briefing Modal - Shows on first launch of the day */}
-      <DailyBriefing timeLeft={timeLeft} targetDate={targetDate} />
-
       <main className="relative z-10 w-full max-w-4xl flex flex-col items-center">
         
         {/* Header / Status Bar - Fun Space Version */}
